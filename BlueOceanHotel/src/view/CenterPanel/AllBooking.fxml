@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="973.0" prefWidth="1657.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contoller.centerPanel.AllBookingContoller">
+   <children>
+      <ImageView fitHeight="973.0" fitWidth="1657.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Image/room.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableSeeAllBooking" layoutX="54.0" layoutY="120.0" opacity="0.9" prefHeight="793.0" prefWidth="1548.0">
+         <columns>
+            <TableColumn fx:id="clmBookingNumber" prefWidth="145.0" sortType="DESCENDING" text="Booking Number" />
+            <TableColumn fx:id="clmBookingDate" prefWidth="180.0" text="Booking Date" />
+            <TableColumn fx:id="clmRoomNumber" prefWidth="145.0" text="Room Number" />
+            <TableColumn fx:id="clmCustomerName" prefWidth="265.0" text="Customer name" />
+            <TableColumn fx:id="clmPhoneNumber" prefWidth="250.0" text="Phone number" />
+            <TableColumn fx:id="clmMealpack" prefWidth="202.0" text="Meal pack" />
+            <TableColumn fx:id="clmChackInDate" prefWidth="180.0" text="Check-InDate" />
+            <TableColumn fx:id="clmChackOutDate" prefWidth="180.0" text="Check-outDate" />
+         </columns>
+      </TableView>
+      <Label layoutX="15.0" layoutY="14.0" prefHeight="30.0" prefWidth="166.0" text="See All  Bookings" textFill="#3485d7">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="43.0" prefHeight="21.0" prefWidth="166.0" />
+      <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="1614.0" layoutY="-1.0" onMouseClicked="#closeOnActon" pickOnBounds="true">
+         <image>
+            <Image url="@../../Image/close.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

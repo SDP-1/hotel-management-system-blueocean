@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="973.0" prefWidth="1657.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contoller.centerPanel.ChackRoomAvailbilityContoller">
+   <children>
+      <ImageView fitHeight="973.0" fitWidth="1657.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Image/room.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableRoomDeatils" layoutX="54.0" layoutY="120.0" opacity="0.9" prefHeight="793.0" prefWidth="1548.0">
+         <columns>
+            <TableColumn fx:id="clmRoomNumber" prefWidth="145.0" text="Room Number" />
+            <TableColumn fx:id="clmRoomCatagary" prefWidth="300.0" text="Room Catagary" />
+            <TableColumn fx:id="clmLocation" prefWidth="540.0" text="Room Location" />
+            <TableColumn fx:id="clmAC" prefWidth="180.0" text="AC / NonAC" />
+            <TableColumn fx:id="clmAvailble" prefWidth="180.0" text="Availability" />
+            <TableColumn fx:id="clmEnableDisable" prefWidth="202.0" text="See Room Details" />
+         </columns>
+      </TableView>
+      <Label layoutX="15.0" layoutY="14.0" prefHeight="30.0" prefWidth="243.0" text="Chack Room Availability " textFill="#3485d7">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="43.0" prefHeight="21.0" prefWidth="232.0" />
+      <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="1614.0" layoutY="-1.0" onMouseClicked="#closeOnActon" pickOnBounds="true">
+         <image>
+            <Image url="@../../Image/close.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="showOnlyAvailableRooms" layoutX="1297.0" layoutY="54.0" mnemonicParsing="false" onAction="#showOnlyAvailableRoomsOnAction" text="See only available rooms" />
+   </children>
+</AnchorPane>
